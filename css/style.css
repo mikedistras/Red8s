@@ -39,24 +39,27 @@ a:hover {
     max-width: 100%;
     height: auto;
   }
-  header .header_navigation {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7c3030+0,800000+100 */
-    background: #7c3030;
+  header .header_style {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#45484d+0,000000+100;Black+3D+%231 */
+    background: #45484d;
     /* Old browsers */
-    background: -moz-linear-gradient(top, #7c3030 0%, #800000 100%);
+    background: -moz-linear-gradient(top, #45484d 0%, black 100%);
     /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7c3030), color-stop(100%, #800000));
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #45484d), color-stop(100%, black));
     /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7c3030 0%, #800000 100%);
+    background: -webkit-linear-gradient(top, #45484d 0%, black 100%);
     /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7c3030 0%, #800000 100%);
+    background: -o-linear-gradient(top, #45484d 0%, black 100%);
     /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7c3030 0%, #800000 100%);
+    background: -ms-linear-gradient(top, #45484d 0%, black 100%);
     /* IE10+ */
-    background: linear-gradient(to bottom, #7c3030 0%, #800000 100%);
+    background: linear-gradient(to bottom, #45484d 0%, black 100%);
     /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c3030', endColorstr='#800000',GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
     /* IE6-9 */
+    height: auto;
+  }
+  header .header_navigation {
     height: auto;
     position: relative;
   }
@@ -108,9 +111,27 @@ a:hover {
     color: #d3d3d3;
     background: #4d0000;
   }
+  header i.fa {
+    font-size: 70%;
+    padding-left: 10px;
+  }
   .main_body {
     background: rgba(0, 0, 0, 0.7);
     padding: 45px 0;
+  }
+  .breadcrumbs {
+    border-bottom: 1px solid #fff;
+    width: 95%;
+    padding: 10px 20px;
+    margin: 0 0 25px;
+    right: -2.5%;
+    display: block;
+  }
+  .breadcrumbs p {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: 11px;
   }
 }
 
@@ -125,6 +146,12 @@ a:hover {
 /* min-width 1025px, large screens */
 /* min-width 1441px, xlarge screens */
 /* min-width 1921px, xxlarge screens */
+footer .footer_links {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 25px 0;
+  border-top: 1px solid #fff;
+}
+
 footer .footer_links h3 {
   text-transform: uppercase;
   font-size: 120%;
