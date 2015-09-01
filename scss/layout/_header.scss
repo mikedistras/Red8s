@@ -1,22 +1,10 @@
-body {
-	background:$black;
-	color:$lightgrey;
-}
-h1,h2,h3,h4 {
-	color:$lightgrey;
-}
-a {
-	color:$white;
-	@include transition(all 0.3s ease);
-	&:hover {
-		color:$lightgrey;
-	}
-}
+// Small screens
+@media only screen {
+
 header {
-	background:$black;
 		.main-logo {
 			display:block;
-			top:-40px;
+
 				.logo {
 					width:auto;
 					height:auto;
@@ -29,10 +17,9 @@ header {
 				}
 		}
 		.header_navigation {
-			background:$darkred;
+			@include redgradiant;
 			height:auto;
 			position: relative;
-			top:-80px;
 			ul.menu {
 				display:inline-block;
 				list-style: none;
@@ -78,4 +65,38 @@ header {
 				}
 			}
 		}
+		
 }
+
+.main_body {
+			background: rgba(0,0,0,0.7);
+			padding:45px 0;
+		}
+
+} /* Define mobile styles */
+
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+
+} /* min-width 641px, medium screens */
+
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+	header .header_navigation ul.menu li a {
+		font-size:21px;
+	}
+} /* min-width 1025px, large screens */
+
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) {
+
+} /* min-width 1441px, xlarge screens */
+
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) {
+	
+} /* min-width 1921px, xxlarge screens */
