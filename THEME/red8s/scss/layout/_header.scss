@@ -1,0 +1,122 @@
+// Small screens
+@media only screen {
+
+header {
+		.main-logo {
+			display:block;
+
+				.logo {
+					width:auto;
+					height:auto;
+					margin:0 auto;
+					text-align:center;
+					img {
+						max-width:100%;
+						height:auto;
+					}
+				}
+		}
+		.header_style {
+			@include redgradiant;
+			height:auto;
+		}
+		.header_navigation {
+			height:auto;
+			position: relative;
+			ul.menu {
+				display:inline-block;
+				list-style: none;
+				margin:0;
+				padding:0;
+				z-index:0;
+				li {
+					display:inline-block;
+					float:left;
+					position: relative;
+					ul.sub_menu {
+						opacity:0;
+						display:none;
+					}
+					&:hover ul.sub_menu {
+						opacity:1;
+						display:block;
+						position:absolute;
+						top:115%;
+						width:150%;
+						list-style: none;
+						padding-left:0;
+						margin-left:0;
+						background:$darkred;
+						z-index:1;
+						li {
+							width:100%;
+						}
+					}
+						a {
+							display:block;
+							width:auto;
+							padding:15px 12px;
+							font-size:13px;
+							color:$white;
+							margin-bottom:-7px;
+							@include transition(all 0.3s ease);
+							&:hover {
+								color:$lightgrey;
+								background:darken($darkred, 10%);
+							}
+						}
+				}
+			}
+		}
+		i.fa {
+			font-size:70%;
+			padding-left:10px;
+		}
+		
+}
+
+.main_body {
+	background: rgba(0,0,0,0.7);
+	padding:45px 0;
+}
+.breadcrumbs {
+	border-bottom:1px solid $white;
+	width:95%;
+	padding:10px 20px;
+	margin:0 0 25px;
+	right:-2.5%;
+	display:block;
+	p {
+		padding:0; margin:0;
+		width:100%;
+		font-size:11px;
+	}
+}
+
+} /* Define mobile styles */
+
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+
+} /* min-width 641px, medium screens */
+
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+	header .header_navigation ul.menu li a {
+		font-size:21px;
+	}
+} /* min-width 1025px, large screens */
+
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) {
+
+} /* min-width 1441px, xlarge screens */
+
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) {
+	
+} /* min-width 1921px, xxlarge screens */
