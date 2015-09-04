@@ -1,0 +1,15 @@
+body {
+	background:url(/img/bg.jpg) no-repeat fixed;
+	background-size:cover;
+	color:$lightgrey;
+}
+h1,h2,h3,h4 {
+	color:$lightgrey;
+}
+a {
+	color:$white;
+	@include transition(all 0.3s ease);
+	&:hover {
+		color:$lightgrey;
+	}
+}
